@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 
-SECRET_KEY = 'TURSe2g0cmRjMGQzZF9zM2NyM3RfazN5X3BsNV9kMG50X2MwbW0xdH0='
+SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DATABASES = {
     'default': {
